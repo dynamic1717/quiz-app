@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('./images/bg.jpg');
+  --main-red: #e72b4b;
+  --main-green: #9bca3c;
+  --main-yellow: #fbd804;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: var(--main-yellow) !important;
+  font-size: 3.5rem !important;
+  text-align: center;
+  margin-bottom: 1rem !important;
+}
+
+h2 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-brand:hover {
+  color: var(--main-yellow) !important;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  bottom: -17px;
+  right: 0;
+  background-color: var(--main-yellow);
+}
+
+.btn-main {
+  background-color: var(--main-yellow) !important;
+  outline: none !important;
+}
+
+.btn-main:hover,
+.btn-main:active,
+.btn-main.active {
+  background-color: var(--main-green) !important;
+}
+
+.btn-outline {
+  width: 80%;
+  border: 1px solid var(--main-yellow) !important;
+  color: #212529 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto;
+}
+
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline.active {
+  background: var(--main-yellow);
+  color: var(--main-yellow);
+  border-color: var(--main-yellow);
+}
+
+.btn-report {
+  color: var(--main-red) !important;
+  border-color: var(--main-red) !important;
+  font-size: 0.8rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-report:hover,
+.btn-report:active,
+.btn-report.active {
+  color: #fff !important;
+  background-color: var(--main-red) !important;
+}
+
+.result {
+  position: absolute !important;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toast-wrapper {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
